@@ -1,0 +1,10 @@
+def descuento_Cantidad_productos(cantidad_productos, precio_productos):
+    if 10 > cantidad_productos>5 :
+        precio_final=precio_productos*cantidad_productos*0.95
+    elif 20 > cantidad_productos>10 :
+        precio_final=precio_productos*cantidad_productos*0.90
+    elif cantidad_productos>=20:
+        precio_final=precio_productos*cantidad_productos*0.80
+    else:
+       precio_final=precio_productos*cantidad_productos
+    return precio_final
