@@ -1,0 +1,10 @@
+A=25e6
+B=18.9e6
+ANO=2022
+while A>B:
+    A *=1.02
+    B *=1.03
+    ANO +=1
+print("ANO FINAL",ANO,)
+print("A",A)
+print("B",B)
