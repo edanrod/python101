@@ -1,0 +1,6 @@
+numero=int(input("Ingrese un número positivo mayor a 2:"))
+   
+while numero >= 2: 
+    if numero %2 ==0:
+        print(numero)
+    numero -=1
