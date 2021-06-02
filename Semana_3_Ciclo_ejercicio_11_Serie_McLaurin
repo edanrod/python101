@@ -1,0 +1,31 @@
+from math import pi 
+
+def elevado_a(x,y):
+    elevado=x**y
+    return elevado
+
+def factorial(n):
+    s=1
+    while n>0:
+        s *=n
+        n -=1
+    return s
+
+def main():           # Serie de McLaurin 
+    x=float(input("digite un valor de x"))
+    total=0.0
+    if x > 0:
+            n=int(input("digite un valor de n"))
+            print (x,n)
+            i=0
+            for i in range (0,n+1):
+                primer_resultado= 1/((2*i)+1)
+                parentesis=((x**2)-1)/((x**2)+1)
+                segundo_resultado=elevado_a(parentesis,((2*i)+1))
+                resultado=primer_resultado*segundo_resultado
+                total +=resultado
+            print(total)
+    else:
+        print("Esta ecuación es solo para números reales cercanos a 0")
+
+main()
