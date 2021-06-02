@@ -1,0 +1,10 @@
+def min_maquina():
+    Xo = 1.0
+    Xi = Xo / 2.0
+    while Xi > 0.0:
+        Xo = Xi
+        Xi = Xo / 2.0
+        print(Xo)
+    return Xo
+print("El mínimo número positivo", end = " ")
+print("en esta máquina es:", min_maquina())
