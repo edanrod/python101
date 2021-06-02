@@ -1,0 +1,8 @@
+a=input("ingrese a")
+b=input("ingrese b")
+def mayor_entre_numeros(x, y):
+    if x > y:
+        return x
+    else:
+        return y
+print("el mayor de los dos números es:" + mayor_entre_numeros(a, b))
