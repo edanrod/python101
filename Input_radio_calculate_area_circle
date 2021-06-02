@@ -1,0 +1,12 @@
+r=int(input("digite el radio y yo calculo el area del circulo"))
+
+def cuadrado_numero(numeroi):
+    cuadrado=numeroi**2
+    return cuadrado
+
+
+def area_circulo(radio):
+    pi=3.14159
+    area = pi*cuadrado_numero(radio)
+    return area
+print(area_circulo(10))
