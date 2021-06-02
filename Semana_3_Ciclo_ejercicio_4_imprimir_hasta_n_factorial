@@ -1,0 +1,11 @@
+numero=int(input("Ingrese un número positivo :"))
+
+def factorial(n):
+    s=1
+    while n>0:
+        s *=n
+        n -=1
+    return s
+
+for numero in range (1,numero+1):
+    print (numero,factorial(numero))
