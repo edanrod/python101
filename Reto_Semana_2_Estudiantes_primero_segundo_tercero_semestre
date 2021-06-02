@@ -1,0 +1,19 @@
+estudiantes_primer_semestre=int(input("Ingrese el número de estudiantes de primer semestre :"))
+
+def calculo_estudiantes (estudiantes_primero):
+    estudiantes_segundo:int= 0
+    estudiantes_tercero:int= 0
+    estudiantes_segundo= ((estudiantes_primero*2)+4)
+    estudiantes_tercero= (estudiantes_segundo+estudiantes_primero)//5
+    print(estudiantes_primero,estudiantes_segundo,estudiantes_tercero)
+    
+    if 0<=estudiantes_tercero<=20:
+        print ("uno")
+    elif 21<=estudiantes_tercero<=30:
+        print ("dos")
+    elif 31<=estudiantes_tercero<=50:
+        print ("tres")
+    else:
+        print ("cuatro")
+    
+calculo_estudiantes(estudiantes_primer_semestre)
