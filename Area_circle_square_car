@@ -1,0 +1,12 @@
+from math import pi
+def area_circulo (r):
+    a_circulo=pi*r**2
+    return a_circulo
+
+def area_rectangulo (a,b):
+    a_rectangulo=b*a
+    return a_rectangulo
+    
+def calculo_area_carro (a1,b1,a2,b2,r1,r2):
+    area_carro=area_circulo(r1) + area_circulo(r2) + area_rectangulo(a1,b1) + area_rectangulo(a2,b2)
+    return area_carro
