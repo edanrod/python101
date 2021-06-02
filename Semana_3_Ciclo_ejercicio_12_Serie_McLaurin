@@ -1,0 +1,27 @@
+from math import pi 
+
+def elevado_a(x,y):
+    elevado=x**y
+    return elevado
+
+def factorial(n):
+    s=1
+    while n>0:
+        s *=n
+        n -=1
+    return s
+
+def main():           # Serie de McLaurin 
+    x=float(input("digite un valor de x"))
+    n=int(input("digite un valor de n"))
+    print (x,n)
+    i=0
+    total=0.0
+    for i in range (0,n+1):
+        resultado_numerador = (elevado_a(-1,i))*(elevado_a(x,((2*i)+1)))
+        resultado_denominador =  (2*i) + 1
+        resultado=resultado_numerador/resultado_denominador
+        total +=resultado
+    print(total)
+
+main()
