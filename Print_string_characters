@@ -1,0 +1,5 @@
+print('ejemplo de cadena')
+print("Cadena con un tabulado \t y una nueva \n lınea")
+print('Cadena con un caracter unicode \u01F4 y una comilla doble"')
+print("Cadena con una comilla simple ’, una comilla doble \" y una diagonal invertida \\")
+print("")
