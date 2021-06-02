@@ -1,0 +1,10 @@
+def elevado_a(x,y):
+    elevado=x**y
+    return elevado
+
+def main ():
+    x=int(input("digite el número x"))
+    y=int(input("digite el número y"))
+    print (" x elevado a la y es igual a  :", elevado_a(x,y))
+
+main()
