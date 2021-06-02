@@ -1,0 +1,9 @@
+def calculo_dos_elevado_n (numero):
+    resultado = 2**numero
+    return resultado
+
+def main ():
+    numero=int(input("digite el número al cual desea elevar 2 "))
+    print (calculo_dos_elevado_n(numero))
+
+main()
